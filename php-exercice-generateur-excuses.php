@@ -16,10 +16,12 @@
         </div>
 
         <div class="childGender"><label for="childGender">Child's Gender:</label>
-            <input type="radio" name="childGender" value="girl" id="girl" required>
-            <label for="girl">Girl</label>
-            <input type="radio" name="childGender" value="boy" id="boy" required>
-            <label for="boy">Boy</label>
+            <div class="girlGender"><label for="girl">Girl</label>
+                <input type="radio" name="childGender" value="girl" id="girl" required>
+            </div>
+            <div class="boyGender"><label for="boy">Boy</label>
+                <input type="radio" name="childGender" value="boy" id="boy" required>
+            </div>
         </div>
 
         <div class="teacherName"> <label for="teacherName">Teacher's Name:</label>
@@ -27,17 +29,21 @@
         </div>
 
         <label>Reason for Absence:</label>
-        <div class="absenceReason"><input type="radio" name="absenceReason" value="illness" id="illness" required>
-            <label for="illness">Illness</label>
+        <div class="absenceReason">
+            <div class="illnessReason"><label for="illness">Illness</label>
+                <input type="radio" name="absenceReason" value="illness" id="illness" required>
+            </div>
 
-            <input type="radio" name="absenceReason" value="pet" id="pet" required>
-            <label for="pet">Death of the Pet</label>
+            <div class="petReason"><label for="pet">Death of the Pet</label>
+                <input type="radio" name="absenceReason" value="pet" id="pet" required>
+            </div>
 
-            <input type="radio" name="absenceReason" value="extra-curricular" id="extra-curricular" required>
-            <label for="extra-curricular">Significant Extra-curricular Activity</label>
-
-            <input type="radio" name="absenceReason" value="other" id="other" required>
-            <label for="other">Other</label>
+            <div class="extra-curricularReason"><label for="extra-curricular">Significant Extra-curricular Activity</label>
+                <input type="radio" name="absenceReason" value="extra-curricular" id="extra-curricular" required>
+            </div>
+            <div class="otherReason"><label for="other">Other</label>
+                <input type="radio" name="absenceReason" value="other" id="other" required>
+            </div>
         </div>
 
         <input type="submit" name="submit" value="Generate Apology Letter">

@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #BCAC9B;
+  background-color: #bcac9b;
   padding: 20px;
   margin: 0;
 }
@@ -9,7 +9,7 @@ body h1 {
   color: #725752;
 }
 body form {
-  background-color: #DDC9B4;
+  background-color: #ddc9b4;
   padding: 20px;
   border-radius: 5px;
   max-width: 600px;
@@ -20,6 +20,7 @@ body form label {
   margin-bottom: 10px;
   font-weight: bold;
   color: #725752;
+  width: 200px;
 }
 body form input[type=text],
 body form input[type=radio] {
@@ -31,8 +32,7 @@ body form input[type=radio] {
   box-sizing: border-box;
 }
 body form input[type=radio] {
-  display: inline-block;
-  margin-right: 10px;
+  height: 15px;
 }
 body form input[type=submit] {
   background-color: #333;
@@ -43,9 +43,19 @@ body form input[type=submit] {
   cursor: pointer;
   width: 100%;
 }
+body form .girlGender,
+body form .boyGender,
+body form .petReason,
+body form .illnessReason,
+body form .extra-curricularReason,
+body form .otherReason {
+  display: flex;
+  flex-direction: row;
+}
 body p {
   text-align: center;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
-}/*# sourceMappingURL=style.css.map */
+  background-color: #725752;
+}
